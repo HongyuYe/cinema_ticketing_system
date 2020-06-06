@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{281A5CBD-153F-4289-AE53-9588C371E4EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ticketing_system</RootNamespace>
+    <AssemblyName>Ticketing_system</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20153.102, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20153.102, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20153.102, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1InputPanel.4, Version=4.0.20153.102, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Schedule.2, Version=2.0.20153.102, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addfilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addfilm.Designer.cs">
+      <DependentUpon>addfilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adim_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adim_manage.Designer.cs">
+      <DependentUpon>adim_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="film_booting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="film_booting.Designer.cs">
+      <DependentUpon>film_booting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="film_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="film_manage.Designer.cs">
+      <DependentUpon>film_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberHelper.cs" />
+    <Compile Include="mem_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mem_manage.Designer.cs">
+      <DependentUpon>mem_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modefyfilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modefyfilm.Designer.cs">
+      <DependentUpon>modefyfilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pay_MemberLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pay_MemberLogin.Designer.cs">
+      <DependentUpon>Pay_MemberLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seatandhall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seatandhall.Designer.cs">
+      <DependentUpon>seatandhall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerHelper.cs" />
+    <Compile Include="selling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selling.Designer.cs">
+      <DependentUpon>selling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="film_scedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="film_scedule.Designer.cs">
+      <DependentUpon>film_scedule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addfilm.resx">
+      <DependentUpon>addfilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adim_manage.resx">
+      <DependentUpon>adim_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="film_booting.resx">
+      <DependentUpon>film_booting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="film_manage.resx">
+      <DependentUpon>film_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mem_manage.resx">
+      <DependentUpon>mem_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modefyfilm.resx">
+      <DependentUpon>modefyfilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay_MemberLogin.resx">
+      <DependentUpon>Pay_MemberLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="seatandhall.resx">
+      <DependentUpon>seatandhall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selling.resx">
+      <DependentUpon>selling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="film_scedule.resx">
+      <DependentUpon>film_scedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{df7d1433-c581-4202-a469-53919235d469}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{bff25cad-ba9c-4309-9a1d-fe51bd8e9677}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeatKJ\SeatKJ\SeatKJ.csproj">
+      <Project>{e2dcd9e6-baa6-4efd-a450-38cb262f7663}</Project>
+      <Name>SeatKJ</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
