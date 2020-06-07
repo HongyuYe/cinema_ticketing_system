@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.会员管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.营业情况ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.管理员操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -57,52 +55,37 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.会员管理ToolStripMenuItem,
-            this.营业情况ToolStripMenuItem,
             this.管理员操作ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1125, 29);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1688, 41);
             this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // 会员管理ToolStripMenuItem
-            // 
-            this.会员管理ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.会员管理ToolStripMenuItem.Name = "会员管理ToolStripMenuItem";
-            this.会员管理ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
-            this.会员管理ToolStripMenuItem.Text = "会员管理";
-            this.会员管理ToolStripMenuItem.Click += new System.EventHandler(this.会员管理ToolStripMenuItem_Click);
-            // 
-            // 营业情况ToolStripMenuItem
-            // 
-            this.营业情况ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.营业情况ToolStripMenuItem.Name = "营业情况ToolStripMenuItem";
-            this.营业情况ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
-            this.营业情况ToolStripMenuItem.Text = "营业情况";
-            this.营业情况ToolStripMenuItem.Click += new System.EventHandler(this.营业情况ToolStripMenuItem_Click);
             // 
             // 管理员操作ToolStripMenuItem
             // 
             this.管理员操作ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.退出ToolStripMenuItem});
-            this.管理员操作ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.管理员操作ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.管理员操作ToolStripMenuItem.Name = "管理员操作ToolStripMenuItem";
-            this.管理员操作ToolStripMenuItem.Size = new System.Drawing.Size(102, 25);
-            this.管理员操作ToolStripMenuItem.Text = "管理员操作";
+            this.管理员操作ToolStripMenuItem.Size = new System.Drawing.Size(74, 35);
+            this.管理员操作ToolStripMenuItem.Text = "操作";
             // 
             // 退出ToolStripMenuItem
             // 
-            this.退出ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.退出ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(252, 32);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.ad_exit);
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(282, 88);
+            this.monthCalendar1.Location = new System.Drawing.Point(423, 147);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(14, 15, 14, 15);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 14;
             // 
@@ -112,9 +95,10 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 29);
+            this.panel1.Location = new System.Drawing.Point(0, 41);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1125, 472);
+            this.panel1.Size = new System.Drawing.Size(1688, 787);
             this.panel1.TabIndex = 15;
             // 
             // groupBox1
@@ -128,18 +112,21 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1125, 120);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(1688, 197);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(402, 77);
+            this.button9.Location = new System.Drawing.Point(603, 128);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.Size = new System.Drawing.Size(112, 38);
             this.button9.TabIndex = 28;
             this.button9.Text = "档期管理";
             this.button9.UseVisualStyleBackColor = true;
@@ -147,9 +134,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(293, 77);
+            this.button4.Location = new System.Drawing.Point(440, 128);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(112, 38);
             this.button4.TabIndex = 27;
             this.button4.Text = "修改";
             this.button4.UseVisualStyleBackColor = true;
@@ -157,9 +145,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(179, 77);
+            this.button3.Location = new System.Drawing.Point(268, 128);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(112, 38);
             this.button3.TabIndex = 26;
             this.button3.Text = "删除";
             this.button3.UseVisualStyleBackColor = true;
@@ -167,9 +156,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(67, 77);
+            this.button2.Location = new System.Drawing.Point(100, 128);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(112, 38);
             this.button2.TabIndex = 25;
             this.button2.Text = "新增影片";
             this.button2.UseVisualStyleBackColor = true;
@@ -178,9 +168,10 @@
             // button1
             // 
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button1.Location = new System.Drawing.Point(293, 29);
+            this.button1.Location = new System.Drawing.Point(440, 48);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(112, 38);
             this.button1.TabIndex = 24;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
@@ -188,17 +179,19 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(67, 31);
+            this.textBox2.Location = new System.Drawing.Point(100, 52);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(130, 21);
+            this.textBox2.Size = new System.Drawing.Size(193, 28);
             this.textBox2.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 34);
+            this.label2.Location = new System.Drawing.Point(12, 57);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 18;
             this.label2.Text = "电影名：";
             // 
@@ -218,10 +211,11 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 126);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 210);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1113, 343);
+            this.dataGridView1.Size = new System.Drawing.Size(1670, 572);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -261,13 +255,14 @@
             // 
             // film_manage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 550);
+            this.ClientSize = new System.Drawing.Size(1688, 917);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "film_manage";
             this.Text = "电影管理";
             this.Load += new System.EventHandler(this.film_manage_Load);
@@ -286,8 +281,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 会员管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 营业情况ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 管理员操作ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
@@ -306,7 +299,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-
-
     }
 }

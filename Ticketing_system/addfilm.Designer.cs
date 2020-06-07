@@ -158,7 +158,7 @@
             this.MaximumSize = new System.Drawing.Size(329, 254);
             this.MinimumSize = new System.Drawing.Size(329, 254);
             this.Name = "addfilm";
-            this.Text = "addfilm";
+            this.Text = "添加电影";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

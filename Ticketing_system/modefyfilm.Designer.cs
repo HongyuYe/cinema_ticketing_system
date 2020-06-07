@@ -158,7 +158,7 @@
             this.MaximumSize = new System.Drawing.Size(328, 253);
             this.MinimumSize = new System.Drawing.Size(328, 253);
             this.Name = "modefyfilm";
-            this.Text = "modefyfilm";
+            this.Text = "电影信息修改";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);

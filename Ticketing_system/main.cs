@@ -40,6 +40,7 @@ namespace Ticketing_system
             BLL.Dealticketing_seller dealticket_seller = new BLL.Dealticketing_seller();
             string id1 = SellerHelper.Id;
             int id2 = Convert.ToInt32(id1);
+
             if (dealticket_seller.getSuper_seller(id2))//判断是否为超级管理员
             {
                 adim_manage ai_m1 = new adim_manage();
@@ -53,7 +54,7 @@ namespace Ticketing_system
 
         private void p1(object sender, MouseEventArgs e)
         {
-            film_booting film_b1 = new film_booting();
+            film_booking film_b1 = new film_booking();
             film_b1.Show();
         }
         #endregion
@@ -63,8 +64,14 @@ namespace Ticketing_system
 
         }
 
-        
+        private void main_Load(object sender, EventArgs e)
+        {
 
+        }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

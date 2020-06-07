@@ -23,7 +23,7 @@ namespace Ticketing_system
         #region 菜单栏操作
         private void 售票ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            film_booting film_b1 = new film_booting();
+            film_booking film_b1 = new film_booking();
             film_b1.Show();
         }
 

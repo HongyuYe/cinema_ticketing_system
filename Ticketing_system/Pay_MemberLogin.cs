@@ -46,5 +46,10 @@ namespace Ticketing_system
                     MessageBox.Show("验证失败!");
             }
         }
+
+        private void Pay_MemberLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -66,11 +66,11 @@
     <Compile Include="adim_manage.Designer.cs">
       <DependentUpon>adim_manage.cs</DependentUpon>
     </Compile>
-    <Compile Include="film_booting.cs">
+    <Compile Include="film_booking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="film_booting.Designer.cs">
-      <DependentUpon>film_booting.cs</DependentUpon>
+    <Compile Include="film_booking.Designer.cs">
+      <DependentUpon>film_booking.cs</DependentUpon>
     </Compile>
     <Compile Include="film_manage.cs">
       <SubType>Form</SubType>
@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="mem_manage.Designer.cs">
       <DependentUpon>mem_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mem_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mem_register.Designer.cs">
+      <DependentUpon>mem_register.cs</DependentUpon>
     </Compile>
     <Compile Include="modefyfilm.cs">
       <SubType>Form</SubType>
@@ -136,8 +142,8 @@
     <EmbeddedResource Include="adim_manage.resx">
       <DependentUpon>adim_manage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="film_booting.resx">
-      <DependentUpon>film_booting.cs</DependentUpon>
+    <EmbeddedResource Include="film_booking.resx">
+      <DependentUpon>film_booking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="film_manage.resx">
       <DependentUpon>film_manage.cs</DependentUpon>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mem_manage.resx">
       <DependentUpon>mem_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mem_register.resx">
+      <DependentUpon>mem_register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modefyfilm.resx">
       <DependentUpon>modefyfilm.cs</DependentUpon>

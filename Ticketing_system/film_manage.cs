@@ -30,6 +30,13 @@ namespace Ticketing_system
         public film_manage()
         {
             InitializeComponent();
+            if(login.Is_member==true)
+            {
+                button2.Enabled = false;
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button9.Enabled = false;
+            }
     
         }
 

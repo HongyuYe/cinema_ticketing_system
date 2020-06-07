@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ticketing_system
 {
-    public partial class film_booting : Form
+    public partial class film_booking : Form
     {
 
         BLL.Dealfilm dealfilm = new BLL.Dealfilm();
@@ -19,16 +19,16 @@ namespace Ticketing_system
         String strWhere;
         int F_id;
         
-        public film_booting()
+        public film_booking()
         {
             InitializeComponent();
         }
 
         #region 菜单栏操作
-        private void 会员管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 已上映电影信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            mem_manage mem_m1 = new mem_manage();
-            mem_m1.Show();
+            film_manage film_m1 = new film_manage();
+            film_m1.Show();
         }
 
         private void 营业情况ToolStripMenuItem_Click(object sender, EventArgs e)
