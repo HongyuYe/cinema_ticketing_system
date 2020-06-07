@@ -42,10 +42,10 @@ namespace Ticketing_system
                 model.Level = "黄金会员";
                 if (dealmember.Addmember(model))
                 {
-                    MessageBox.Show("添加成功");
+                    MessageBox.Show("注册成功");
                 }
                 else
-                    MessageBox.Show("添加失败");
+                    MessageBox.Show("注册失败");
             }
         }
 
